@@ -34,8 +34,10 @@ RSpec.describe MarkovChainer do
           results[new_sentence] ||= 0
           results[new_sentence] += 1
         end
+        puts results
         expect(results["Rob loves Javascript"]).to be > 0
       end
     end
   end
 end
+
